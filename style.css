@@ -20,6 +20,7 @@
   box-shadow: 1px 4px 20px 1px rgb(219, 211, 211);
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 body{
   background-color: rgb(231, 238, 238);
@@ -69,7 +70,7 @@ body{
   flex-direction: row;
   row-gap: 30px;
   position: relative;
-  z-index: -1;
+  /* z-index: -1; */
 }
 /* #Popular img{
 mix-blend-mode: color-burn;
@@ -150,7 +151,9 @@ b{
   flex-direction: row;
   color: whitesmoke;
 }
-
+#btnCart{
+  cursor: pointer;
+}
 @media (max-width:750px) {
   .fifth{
     display: flex;
