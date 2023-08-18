@@ -1,26 +1,56 @@
-.navlink a{
-  margin-right: 20px;
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-.navlink a:hover{
-  text-decoration: underline;
-  color: rgb(0, 213, 255);
-}
-.navlink img{
-  margin-right: 20px;
-}
-.navbar h1{
-  margin-left: 40px;
-  font-family:serif ;
-}
-.navbar{
+.navbar {
   background: rgb(231, 238, 238);
   box-shadow: 1px 4px 20px 1px rgb(219, 211, 211);
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.navbar .navbar-brand {
+  margin-left: 40px;
+  font-family: serif;
+}
+
+.navbar .nav-link {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+  color: black;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  color: rgb(0, 213, 255);
+}
+
+.navbar .nav-link.active {
+  color: rgb(0, 213, 255);
+}
+
+.navbar .navbar-nav {
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-item:nth-child(n){
+   margin-left: 20px;
+}
+.navbar h1{
+  font-size: 30px;
+}
+.navbar .navbar-collapse {
+  flex-basis: 100%;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
+}
+
+.navbar img {
+  margin-right: 20px;
 }
 body{
   background-color: rgb(231, 238, 238);
@@ -61,6 +91,7 @@ body{
   color: whitesmoke;
   border-radius: 4px;
   padding: 4px;
+  cursor: pointer;
 }
 #Popular{
   gap: 30px;
@@ -185,3 +216,61 @@ b{
   width: 100%;
   border-radius: 20px;
 }
+/***
+! style rules for label and some buttons
+**/
+.text-centre{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.HomeBtn{
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.shoping-cart{
+  display: grid;
+  grid-template-columns: repeat(1,320px);
+  justify-content: center;
+  gap: 8px;
+}
+.cart-item{
+  border-radius: 4px;
+  border: solid 1px black;
+  display:flex;
+  flex-direction: row;
+ align-items: center;
+ height: 120px;
+}
+.cancelX{
+  color: red;
+  font-family: monospace;
+  font-size: larger;
+  cursor: pointer;
+}
+.title-price-x{
+  display: flex;
+  align-items: center;
+  width: 195px;
+  justify-content: space-between;
+}
+.title-price-items{
+  margin: 0;
+}
+.title-price{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 0px;
+}
+  .cart-item-price{
+    background-color: #212529;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+    margin: 0px;
+  }
